@@ -49,6 +49,7 @@ section p + p {
 }
 
 /* Style the project divs in the Portfolio section */
+/* Style the project divs in the Portfolio section */
 .project {
     margin: 20px 0;
     padding: 10px;
@@ -56,6 +57,17 @@ section p + p {
     background-color: #fff;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+}
+
+.project-content {
+    display: flex;
+    align-items: center; /* Vertically align content */
+    justify-content: space-between; /* Space between image and description */
+}
+
+/* Style project descriptions */
+.project-description {
+    flex-grow: 1; /* Grow to fill remaining space */
 }
 
 .project h3 {
@@ -73,6 +85,23 @@ section p + p {
     text-decoration: none;
     font-weight: bold;
 }
+
+/* Style project images */
+.project img {
+    max-width: 200px; /* Adjust the maximum width as needed */
+    height: auto;
+    margin: 0 10px; /* Add spacing between image and description */
+}
+
+/* Alternate the order of project content for every other project */
+.project:nth-child(even) .project-content {
+    flex-direction: row-reverse; /* Reverse order for even projects */
+}
+
+.project:nth-child(even) img {
+    margin: 0 0 0 10px; /* Adjust margin for even projects */
+}
+
 
 /* Style the Contact section */
 #contact {
