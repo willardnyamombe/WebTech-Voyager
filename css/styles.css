@@ -116,6 +116,15 @@ a:hover {
 /* Medium screens (769px to 1024px) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     /* Add specific styles for medium screens here */
+    section {
+        margin: 40px auto;
+        max-width: 1000px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
 
     /* Arrange projects in a 2-column grid */
     #portfolio {
@@ -135,6 +144,15 @@ a:hover {
 /* Large screens (1025px and above) */
 @media screen and (min-width: 1025px) {
     /* Add specific styles for large screens here */
+    section {
+        margin: 40px auto;
+        max-width: 1200px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
 
     /* Arrange projects in a 3-column grid */
     #portfolio {
