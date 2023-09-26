@@ -11,7 +11,6 @@ header {
     padding: 1rem;
 }
 
-/* Add more styles for other sections, links, and elements as needed */
 /* Style the main sections */
 section {
     margin: 40px auto;
@@ -49,7 +48,6 @@ section p + p {
 }
 
 /* Style the project divs in the Portfolio section */
-/* Style the project divs in the Portfolio section */
 .project {
     margin: 20px 0;
     padding: 10px;
@@ -61,13 +59,14 @@ section p + p {
 
 .project-content {
     display: flex;
-    align-items: center; /* Vertically align content */
-    justify-content: space-between; /* Space between image and description */
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Style project descriptions */
 .project-description {
-    flex-grow: 1; /* Grow to fill remaining space */
+    flex-grow: 1;
+    padding: 0 10px;
 }
 
 .project h3 {
@@ -88,20 +87,19 @@ section p + p {
 
 /* Style project images */
 .project img {
-    max-width: 400px; /* Adjust the maximum width as needed */
+    max-width: 400px;
     height: auto;
-    margin: 0 10px; /* Add spacing between image and description */
+    margin: 0 10px;
 }
 
 /* Alternate the order of project content for every other project */
 .project:nth-child(even) .project-content {
-    flex-direction: row-reverse; /* Reverse order for even projects */
+    flex-direction: row-reverse;
 }
 
 .project:nth-child(even) img {
-    margin: 0 0 0 10px; /* Adjust margin for even projects */
+    margin: 0 0 0 10px;
 }
-
 
 /* Style the Contact section */
 #contact {
