@@ -55,9 +55,12 @@ section p + p {
     background-color: #fff;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+}
+
+.project-content {
     display: flex;
-    flex-direction: column; /* Stack elements vertically by default */
-    text-align: center; /* Center text by default */
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Style project descriptions */
@@ -82,16 +85,20 @@ section p + p {
     font-weight: bold;
 }
 
-/* Style project images within links */
-.project a img {
-    max-width: 100%; /* Adjust image width to fit the screen */
+/* Style project images */
+.project img {
+    max-width: 400px;
     height: auto;
-    margin: 10px 0; /* Add spacing around the image */
+    margin: 0 10px;
 }
 
 /* Alternate the order of project content for every other project */
 .project:nth-child(even) .project-content {
-    flex-direction: column; /* Stack elements vertically for even projects */
+    flex-direction: row-reverse;
+}
+
+.project:nth-child(even) img {
+    margin: 0 0 0 10px;
 }
 
 /* Style the Contact section */
@@ -102,51 +109,4 @@ section p + p {
 /* Apply a hover effect to links */
 a:hover {
     text-decoration: underline;
-}
-
-/* Media queries for different screen sizes */
-
-/* Small screens (up to 768px) */
-@media screen and (max-width: 768px) {
-    .project {
-        text-align: center; /* Center text on small screens */
-    }
-}
-
-/* Medium screens (769px to 1024px) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    /* Add specific styles for medium screens here */
-
-    /* Arrange projects in a 2-column grid */
-    #portfolio {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    /* Adjust the size of project images for medium screens */
-    .project a img {
-        max-width: 100%; /* Adjust image width to fit the screen */
-        height: auto;
-        margin: 10px 0; /* Add spacing around the image */
-    }
-}
-
-/* Large screens (1025px and above) */
-@media screen and (min-width: 1025px) {
-    /* Add specific styles for large screens here */
-
-    /* Arrange projects in a 3-column grid */
-    #portfolio {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
-
-    /* Adjust the size of project images for large screens */
-    .project a img {
-        max-width: 100%; /* Adjust image width to fit the screen */
-        height: auto;
-        margin: 10px 0; /* Add spacing around the image */
-    }
 }
