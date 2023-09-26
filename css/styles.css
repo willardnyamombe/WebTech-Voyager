@@ -88,7 +88,7 @@ section p + p {
 
 /* Style project images */
 .project img {
-    max-width: 200px; /* Adjust the maximum width as needed */
+    max-width: 400px; /* Adjust the maximum width as needed */
     height: auto;
     margin: 0 10px; /* Add spacing between image and description */
 }
