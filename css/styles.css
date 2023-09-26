@@ -91,7 +91,7 @@ section p + p {
 
 /* Alternate the order of project content for every other project */
 .project:nth-child(even) .project-content {
-    flex-direction: column; /* Stack elements vertically for even projects */
+    flex-direction: row-reverse; /* Stack elements vertically for even projects */
 }
 
 /* Style the Contact section */
