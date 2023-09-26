@@ -90,9 +90,9 @@ section p + p {
 }
 
 /* Alternate the order of project content for every other project */
-.project:nth-child(even) .project-content {
-    flex-direction: row-reverse; /* Stack elements vertically for even projects */
-}
+/* .project:nth-child(even) .project-content {
+    flex-direction: row-reverse; 
+} */
 
 /* Style the Contact section */
 #contact {
