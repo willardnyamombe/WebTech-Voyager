@@ -63,8 +63,7 @@ section p + p {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     display: flex;
-    flex-direction: row; /* Display in a row for all screen sizes */
-    align-items: center; /* Center align content vertically */
+    flex-direction: column; /* Stack elements vertically by default */
     text-align: center; /* Center text by default */
 }
 
