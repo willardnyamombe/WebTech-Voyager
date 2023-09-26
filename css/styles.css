@@ -76,6 +76,28 @@ section a {
 section p + p {
     margin-top: 15px;
 }
+section h1 {
+    font-size: 28px; /* Larger font size for h1 */
+    font-weight: bold; /* Bolder font weight for h1 */
+    color: #333; /* Default color for h1 */
+    text-align: center;
+    margin-top: 0; /* Remove default margin from h1 */
+    position: absolute; /* Position the h1 element absolutely */
+    top: 20px; /* Adjust the top position as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+}
+section h2 {
+    font-size: 24px; /* Font size for h2 */
+    font-weight: 500; /* Slightly bold font weight for h2 */
+    color: #333; /* Default color for h2 */
+    text-align: center;
+}
+.project h3 {
+    font-size: 20px; /* Font size for h3 */
+    font-weight: 500; /* Slightly bold font weight for h3 */
+    color: #333; /* Default color for h3 */3
+}
 
 /* Style the project divs in the Portfolio section */
 .project {
@@ -97,10 +119,7 @@ section p + p {
     padding: 0 10px;
 }
 
-.project h3 {
-    font-size: 20px;
-    color: #333;
-}
+
 
 .project p {
     font-size: 14px;
